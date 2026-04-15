@@ -9,8 +9,12 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function movie()
+    // Kolom yang bisa diisi lewat mass assignment
+    protected $fillable = ['nama_kategori', 'keterangan'];
+
+    // Relasi: satu kategori punya banyak film
+    public function movies()
     {
-        return $this->hasMany(Category::class);
+        return $this->hasMany(Movie::class, 'category_id');
     }
 }
