@@ -28,7 +28,7 @@ class MovieController extends Controller
     }
 
     // DETAIL
-    public function detail(int $id): View
+    public function detail(String $id): View
     {
         $movie = $this->movieService->getById($id);
         return view('detail', compact('movie'));
