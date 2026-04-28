@@ -37,7 +37,7 @@ Jika Anda baru saja meng-clone repository proyek Laravel dan ingin menjalankan p
 
     php artisan db:seed
 
-    Perintah ini akan menjalankan seeder yang telah didefinisikan.
+    Perintah ini akan menjalankan seeder yang telah didefinisikan
 
 8. **Serve Aplikasi:**
    Setelah langkah-langkah di atas selesai, Anda dapat menjalankan server pengembangan Laravel untuk melihat proyek Anda:
