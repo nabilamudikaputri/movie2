@@ -27,7 +27,7 @@ class MovieController extends Controller
         return view('homepage', compact('movies'));
     }
 
-    // DETAIL
+    // DETAIL MOVIE
     public function detail(String $id): View
     {
         $movie = $this->movieService->getById($id);
@@ -52,7 +52,7 @@ class MovieController extends Controller
         return redirect('/')->with('success', 'Film berhasil ditambahkan.');
     }
 
-    // DATA MOVIES
+    // DATA MOVIES2
     public function data(): View
     {
         $movies = $this->movieService->getAll();
