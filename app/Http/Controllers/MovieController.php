@@ -60,7 +60,7 @@ class MovieController extends Controller
     }
 
     // FORM EDIT
-    public function form_edit(int $id): View
+    public function form_edit(string $id): View
     {
         $movie = $this->movieService->getById($id);
         $categories = Category::all();
@@ -69,7 +69,7 @@ class MovieController extends Controller
     }
 
     // UPDATE
-    public function update(Request $request, int $id): RedirectResponse
+    public function update(Request $request, string $id): RedirectResponse
     {
         $this->movieService->update(
             $id,
@@ -81,7 +81,7 @@ class MovieController extends Controller
     }
 
     // DELETE
-    public function delete(int $id): RedirectResponse
+    public function delete(string $id): RedirectResponse
     {
         $this->movieService->delete($id);
 
