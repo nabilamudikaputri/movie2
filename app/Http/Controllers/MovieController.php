@@ -52,7 +52,7 @@ class MovieController extends Controller
         return redirect('/')->with('success', 'Film berhasil ditambahkan.');
     }
 
-    // DATA MOVIES2
+    // DATA MOVIES
     public function data(): View
     {
         $movies = $this->movieService->getAll();
